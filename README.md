@@ -29,3 +29,17 @@ plugins=(
 Done!!
 
 
+
+
+## examples
+
+make_branches source-branch my-branch1 my-branch2 my-branch3 ...
+
+```
+make_branches master T22-sample-1 T22-sample-2
+```
+
+and for deleting:
+```
+delete_branches T22-sample-1 T22-sample-2
+```
