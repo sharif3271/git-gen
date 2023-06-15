@@ -23,3 +23,23 @@ function make_branches() {
      fi
   done
 }
+
+
+
+function delete_branches() {
+  if [[ ! -d "${PWD}/.git" ]]; then
+    echo 'Not a Valid Git Repository';
+    return;
+  fi
+  
+  arr=("$@");
+  arraylength=${#arr[@]}
+  for (( i=1; i<=${arraylength}; i++ ));
+  do
+      bn="${arr[$i]}"
+      exists=`git show-ref refs/heads/$bn`
+      if [ -n "$exists" ]; then
+        git branch -d $bn
+      fi
+  done
+}
