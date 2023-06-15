@@ -4,3 +4,28 @@ Actually for my self, every week I need to create and remove batch of branches. 
 Enjoy it!
 
 
+
+## how to use
+it is easy if you are using **oh-my-zsh**.
+in your terminal:
+```
+cd $HOME/.oh-my-zsh/custom/plugins
+```
+then
+```
+git clone https://github.com/sharif3271/git-gen.git
+```
+then edit .zshrc on ```$HOME/.zshrc```
+
+```
+plugins=(
+  .
+  .
+  .
+  git-gen
+)
+
+```
+Done!!
+
+
