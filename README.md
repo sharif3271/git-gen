@@ -1,11 +1,11 @@
 # git-gen
-an oh-my-zsh  plugin for handling bulk operations of git.
-Actually for my self, every week I need to create and remove batch of branches. then I have written a function in zsh as an oh-my-zsh custom plugin.
+an oh-my-zsh  plugin for handling bulk deletion and creation of branches.
+Actually for my self, every week I create and remove a batch of branches. then I wrote functions as a plugin for ZSH.
 Enjoy it!
 
 
 
-## how to use
+## How to use
 it is easy if you are using **oh-my-zsh**.
 in your terminal:
 ```
